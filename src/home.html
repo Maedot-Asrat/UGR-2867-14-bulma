@@ -3,31 +3,120 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title id="title">Home</title>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="jscript.js"></script>
     </head>
     <body>
         <header>
-            <nav>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
-                <span>Home</span> 
-                <a href="mailto:asratmaedot@gmail.com">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"></path> </g></svg></a>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+                 <nav class="navbar is-black">
+                    
+                    <div class="navbar-brand columns mb-0">
+                        <div class="column is-hidden-desktop ">
+                            <a href="mailto:asratmaedot@gmail.com" class="column ">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="3vh" width="7vw" ><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="white"></path> </g></svg></a>
+                        </div>
+                        <div class="column is-hidden-desktop is-flex is-justify-content-center">
+                            <span class="has-text-white is-flex is-align-items-center has-text-weight-bold">Home</span>
+                        </div>
+                        <div class="column">
+                            <a class="navbar-burger has-text-white" id="burger" aria-label="menu" aria-expanded="false">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="navbar-menu has-background-black" id="nav-links">
+                        <div class="navbar-end">
+                            <a href="home.html" class="navbar-item has-text-info">Home</a> 
+                            <a href="about.html" class="navbar-item has-text-info">About</a> 
+                            <a href="resume.html" class="navbar-item has-text-info">Resume</a>
+                            <a href="skills.html" class="navbar-item has-text-info">Skills</a>
+                            <a href="testimonials.html" class="navbar-item has-text-info">Testimonials</a>
+                            <a href="contact.html" class="navbar-item has-text-info">Contact</a>
+                        </div>
+                    </div>
+                
+                 </nav>
         </header>
-        <hgroup>
-        <h2>Howdy, I'm Maedot Asrat</h2>
-        <p>I am a 3rd year software engineering student at Addis Ababa University. <br>I am a passionate front-end developer with a keen eye for design and a drive to create exceptional user experiences. I specialize in crafting intuitive and visually appealing websites that seamlessly blend form and function.</p>
-    </hgroup>
-        <img src="images/me.jpg" alt="Picture of Maedot">
-        <button id="contact">Contact</button>
-        <footer>&copy; All rights reserved to Maedot, 2023</footer>
-    </body>
-</html>    
+
+
+    <div class="hero is-fullheight has-background-black columns is-centered mx-0 mb-0" >
+        <div class="container has-background-black display-flex flex-direction-row">
+            <section class=" section columns is-centered mt-6 container has-background-grey-dark mx-0" >
+
+                <hgroup>
+                    <h2 class="is-size-2 has-text-centered py-6 has-text-info">Howdy, I'm Maedot Asrat</h2>
+                    <p class="px-4 has-text-white is-size-4-desktop" >I am a 3rd year software engineering student at Addis Ababa University. <br>I am a passionate front-end developer with a keen eye for design and a drive to create exceptional user experiences. I specialize in crafting intuitive and visually appealing websites that seamlessly blend form and function.</p>
+                </hgroup>
+                <figure class="image center my-6 py-6-desktop px-3 has-text-centered">
+                    <img src="images/me.jpg" alt="Picture of Maedot">
+                </figure>
+    
+            </section>
+
+<div class="py-2 has-text-centered">
+    <button class="button is-rounded is-medium has-background-info has-text-white" id="contact">Contact</button>
+</div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <div class="modal-background" id="modal-background"></div>
+    <div class="modal-content has-background-white py-5 px-5">
+            <h3 class="title mb-6">Hello, Send me your message here.</h3>
+            <form>
+            <div class="field">
+                <div class="control">
+                    <input type="text" name="name" placeholder="Full Name">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <input type="tel" name="phone" placeholder="Phone">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <textarea name="message" class="message" placeholder="Enter your message here..."></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <label>What is your field of interest?</label><br>
+                    <input type="checkbox" name="interest" value="web">
+                    <label>Web Development</label><br>
+                    <input type="checkbox" name="interest" value="web">
+                    <label>UI/UX</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <label>Status: </label><br>
+                    <input type="radio" name="status" value="beginner">
+                    <label>Beginner</label>
+                    <input type="radio" name="status" value="advanced">
+                    <label>Advanced</label>
+                </div>
+            </div>
+            <div class="button has-text-centered is-warning">
+                <button type="button" onclick="revealMessage()" class="button is-warning">Send</button>
+                <p id="button__message" style="display: none">Your message is succesfully sent to Maedot. You will be contacted within 5 business days.</p>
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="footer has-text-right py-0 has-background-black has-text-white">
+        &copy; All rights reserved to Maedot,2023
+</footer>
+</body>
+</html>
+   

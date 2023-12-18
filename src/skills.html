@@ -3,44 +3,99 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title id="title">Skills</title>
+        <title>Skills</title>
+        <!-- <link rel= "stylesheet" href="styles.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="jscript.js"></script>
     </head>
     <body>
         <header>
-            <nav>
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
-                <span>Skills</span> 
-                <a href="mailto:asratmaedot@gmail.com">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"></path> </g></svg></a>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <nav class="navbar is-black">
+                <div class="navbar-brand columns mb-0">
+                    <div class="column is-hidden-desktop">
+                        <a href="mailto:asratmaedot@gmail.com" class="column">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="3vh" width="7vw"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="white"></path> </g></svg></a>
+                    </div>
+                    <div class="column is-hidden-desktop is-flex is-justify-content-center">
+                        <span class="has-text-white is-flex is-align-items-center has-text-weight-bold">Skills</span>
+                    </div>
+                    <div class="column">
+                        <a class="navbar-burger has-text-white" id="burger" aria-label="menu" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-menu has-background-black" id="nav-links">
+                    <div class="navbar-end">
+                        <a href="home.html" class="navbar-item has-text-info">Home</a> 
+                        <a href="about.html" class="navbar-item has-text-info">About</a> 
+                        <a href="resume.html" class="navbar-item has-text-info">Resume</a>
+                        <a href="skills.html" class="navbar-item has-text-info">Skills</a>
+                        <a href="testimonials.html" class="navbar-item has-text-info">Testimonials</a>
+                        <a href="contact.html" class="navbar-item has-text-info">Contact</a>
+                    </div>
+                </div>
             </nav>
-        </header>
-        <h3>Skills in Development and Designing</h3>
-        <section>
-          <img src="images/html.png" alt="html">
-          <h4>HTML</h4>
-          <p>Intermediate</p>
+   </header>
+   <div class="hero has-background-black pt-6 mt-0">
+        <h3 class="title has-text-centered has-text-info">Skills in Development and Designing</h3>
+        <section class="section has-text-centered">
+            <div class="section">
+                <section class="section has-background-info-dark mb-6">
+                    <div class="columns">
+                        <div class="column has-text-centered">
+                                <img src="images/html.png" alt="html" class="image is-64x64 is-inline-block">
+                        </div>
+                        <h4 class="column title has-text-black">HTML</h4>
+                        <div class="column is-hidden-mobile pt-5">
+                            <progress class="progress has-text-info" value="75" max="100">75%</progress>
+                        </div>
+                        <p class="column subtitle has-text-black pt-5 is-hidden-tablet">Intermediate</p>
+                    </div>
+                </section>
+                <section class="section has-background-info-dark mb-6">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="images/css.png" alt="css" class="image is-64x64 is-inline-block">
+                        </div>
+                        <h4 class="column title has-text-black">CSS</h4>
+                        <div class="column is-hidden-mobile pt-5">
+                            <progress class="progress" value="75" max="100">75%</progress>
+                        </div>
+                        <p class="column subtitle has-text-black is-hidden-tablet">Intermediate</p>
+                    </div>
+                </section>
+                <section class="section has-background-info-dark mb-6">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="images/python.png" alt="python" class="image is-64x64 is-inline-block">
+                        </div>
+                        <h4 class="column title has-text-black">Python</h4>
+                        <div class="column is-hidden-mobile pt-5">
+                            <progress class="progress" value="50" max="100">50%</progress>
+                        </div>
+                        <p class="column subtitle has-text-black is-hidden-tablet">Beginner</p>
+                    </div>
+                </section>
+                <section class="section has-background-info-dark mb-6">
+                    <div class="columns">
+                        <div class="column">
+                            <img src="images/figma.png" alt="figma" class="image is-64x64 is-inline-block">
+                        </div>
+                        <h4 class="column title has-text-black">Figma</h4>
+                        <div class="column is-hidden-mobile pt-5">
+                            <progress class="progress" value="85" max="100">85%</progress>
+                        </div>
+                        <p class="column subtitle has-text-black is-hidden-tablet">Advanced</p>
+                    </div>
+                </section>
+            </div>
         </section>
-        <section>
-          <img src="images/css.png" alt="css">
-          <h4>CSS</h4>
-          <p>Intermediate</p></section>
-        <section>
-          <img src="images/python.png" alt="python">
-          <h4>Python</h4>
-          <p>Beginner</p>
-        </section>
-        <section>
-          <img src="images/figma.png" alt="figma">
-          <h4>Figma</h4>
-          <p>Advanced</p></section>
-        <footer>&copy; All rights reserved to Maedot, 2023</footer>
+    </div>
+        <footer class="footer has-text-right py-0 has-background-black has-text-white">
+            &copy; All rights reserved to Maedot,2023
+    </footer>
     </body>
 </html>

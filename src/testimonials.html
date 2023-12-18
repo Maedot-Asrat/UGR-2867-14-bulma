@@ -3,35 +3,63 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title id="title">Testimonials</title>
+        <title>Testimonials</title>
+        <!-- <link rel= "stylesheet" href="styles.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="jscript.js"></script>
     </head>
     <body>
         <header>
-            <nav>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g> <g stroke-linecap="round" stroke-linejoin="round"></g> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
-                <span>Testimonials</span> 
-                <a href="mailto:asratmaedot@gmail.com">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="1em" width="1em"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#080341"></path> </g></svg></a>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
+            <nav class="navbar is-black">
+                <div class="navbar-brand columns mb-0">
+                    <div class="column is-hidden-desktop">
+                        <a href="mailto:asratmaedot@gmail.com" class="column">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" height="3vh" width="7vw"><g  stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g > <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="white"></path> </g></svg></a>
+                    </div>
+                    <div class="column is-hidden-desktop is-flex is-justify-content-center">
+                        <span class="has-text-white is-flex is-align-items-center has-text-weight-bold">Testimonials</span>
+                    </div>
+                    <div class="column">
+                        <a class="navbar-burger has-text-white" id="burger" aria-label="menu" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar-menu has-background-black" id="nav-links">
+                    <div class="navbar-end">
+                        <a href="home.html" class="navbar-item has-text-info">Home</a> 
+                        <a href="about.html" class="navbar-item has-text-info">About</a> 
+                        <a href="resume.html" class="navbar-item has-text-info">Resume</a>
+                        <a href="skills.html" class="navbar-item has-text-info">Skills</a>
+                        <a href="testimonials.html" class="navbar-item has-text-info">Testimonials</a>
+                        <a href="contact.html" class="navbar-item has-text-info">Contact</a>
+                    </div>
+                </div>
             </nav>
-        </header>
-        <div>
-            <img src="images/vig.jpg" alt="Testimonial">
-            <div>
-                <hgroup>
-                    <h4>Vignesha Chiniah</h4>
-                    <p>Director, Future Africa Ambassadors</p>
-                </hgroup>
-                <q>Maedot, a participant of the 2021 Future Africa Ambassadors program, is an exceptional front-end developer. Maedot's humility, willingness to learn, and commitment to excellence make her a valuable asset to any team. She is destined to make a significant impact in the future of web development.</q>
+   </header>
+        <div class="hero has-background-black">
+            <div class="section">
+                <div class="section has-background-grey-dark">
+                    <div class="section columns">
+                        <figure>
+                            <img src="images/vig.jpg" alt="Testimonial" class="image column">
+                        </figure>
+                        <div class="has-text-white pl-4">
+                            <hgroup class="column is-align-items-center">
+                                <h4 class="title has-text-info">Vignesha Chiniah</h4>
+                                <p class="subtitle">Director, Future Africa Ambassadors</p>
+                            </hgroup>
+                            <q class="is-italic">Maedot, a participant of the 2021 Future Africa Ambassadors program, is an exceptional front-end developer. Maedot's humility, willingness to learn, and commitment to excellence make her a valuable asset to any team. She is destined to make a significant impact in the future of web development.</q>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <footer>&copy; All rights reserved to Maedot, 2023</footer>
+    
+    <footer class="footer has-text-right py-0 has-background-black has-text-white">
+        &copy; All rights reserved to Maedot,2023
+    </footer>
     </body>
 </html>
